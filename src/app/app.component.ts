@@ -22,6 +22,12 @@ show : boolean = true;
 
 user = {
     nama:'haha'
+  };
+
+  Pesan = '';
+  KlikButton()
+  {
+    this.Pesan = ' Tombol di tekan';
   }
 }
 

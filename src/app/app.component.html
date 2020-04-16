@@ -23,3 +23,24 @@
   <p *ngIf = "user.nama" >
    nama user : {{user.nama}}
   </p>
+
+<ng-template
+  *ngIf="show;then showBlock; else notShowBlock">
+</ng-template>
+
+<ng-template #showBlock>
+  <p>Ini Show Block</p>
+</ng-template>
+
+<ng-template #notShowBlock>
+  <p>Ini not Show Block</p>
+</ng-template>
+
+<p>
+  <input [(ngModel)] = "a" type = "text"/> * 
+  <input [(ngModel)] = "b" type = "text"/>
+  <br/>{{a*b}}
+</p>
+
+<button (click)="KlikButton()">Tekan</button>
+{{Pesan}}
